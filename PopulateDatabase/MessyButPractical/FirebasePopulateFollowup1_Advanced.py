@@ -5,7 +5,7 @@ from fastapi import FastAPI, Form, Response
 import logging
 from uuid import uuid4
 
-cred = credentials.Certificate('xxx.json')
+cred = credentials.Certificate('../../firebase.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
