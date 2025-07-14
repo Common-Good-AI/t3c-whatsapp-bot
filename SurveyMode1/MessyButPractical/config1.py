@@ -27,8 +27,8 @@ import os
 # firebase_admin.initialize_app(cred)
 
 
-firebase_credentials = json.loads(os.environ.get('FIREBASE_CREDENTIALS'))
-cred = credentials.Certificate(firebase_credentials)
+# firebase_credentials = json.loads(os.environ.get('FIREBASE_CREDENTIALS'))
+cred = credentials.Certificate('../../firebase.json')
 firebase_admin.initialize_app(cred)
 db = firestore.client()
 
